@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/miguel.fuentes/Documents/hunty-integration-microservice/src/infra/adapters/__spec__/cache-client.adapter.spec.ts">
+    <testCase name="ADAPTER | Cache Client RESOURCE | get should call cacheManager.get with key" duration="3"/>
+    <testCase name="ADAPTER | Cache Client RESOURCE | get should return value from cacheManager.get" duration="0"/>
+    <testCase name="ADAPTER | Cache Client RESOURCE | set should call cacheManager.set with key and value" duration="0"/>
+  </file>
+  <file path="/Users/miguel.fuentes/Documents/hunty-integration-microservice/src/application/use-cases/__spec__/attach-file-slack-message-by-channel.use-case.spec.ts">
+    <testCase name="USE-CASE | attach-file-slack-message-history-by-channel SUCCESS FLOWS Should be attach file to slack channel" duration="1"/>
+    <testCase name="USE-CASE | attach-file-slack-message-history-by-channel FAILED FLOWS Should throw error for adapter fail and return bubbling exception message" duration="1"/>
+  </file>
+  <file path="/Users/miguel.fuentes/Documents/hunty-integration-microservice/src/infra/adapters/slack-api/decorators/__spec__/persistence-slack-api.decorator.spec.ts">
+    <testCase name="DECORATOR | persistence-slack-api.decorator Should be call sendMessage method and must record the sent message" duration="0"/>
+    <testCase name="DECORATOR | persistence-slack-api.decorator Should be call getMessage" duration="0"/>
+    <testCase name="DECORATOR | persistence-slack-api.decorator Should be call attachFile" duration="0"/>
+  </file>
+  <file path="/Users/miguel.fuentes/Documents/hunty-integration-microservice/src/application/use-cases/__spec__/send-slack-message-by-channels.use-case.spec.ts">
+    <testCase name="USE-CASE | send-slack-message-by-channels SUCCESS FLOWS Should be send a slack message by channels" duration="8"/>
+    <testCase name="USE-CASE | send-slack-message-by-channels SUCCESS FLOWS Should be skip message by cache register" duration="0"/>
+    <testCase name="USE-CASE | send-slack-message-by-channels FAILED FLOWS Should throw error for adapter fail and return bubbling exception message" duration="15"/>
+  </file>
+  <file path="/Users/miguel.fuentes/Documents/hunty-integration-microservice/src/application/use-cases/__spec__/get-slack-message-history-by-channel.use-case.spec.ts">
+    <testCase name="USE-CASE | get-slack-message-history-by-channel SUCCESS FLOWS Should be return a slack message history" duration="2"/>
+    <testCase name="USE-CASE | get-slack-message-history-by-channel FAILED FLOWS Should throw error for adapter fail and return bubbling exception message" duration="1"/>
+  </file>
+  <file path="/Users/miguel.fuentes/Documents/hunty-integration-microservice/src/infra/persistence/mongoose/repositories/__spec__/message.repository.spec.ts">
+    <testCase name="REPOSITORY | Message SUCCESS should be add document" duration="2"/>
+    <testCase name="REPOSITORY | Message SUCCESS should be skip add document by existing referenceId" duration="0"/>
+    <testCase name="REPOSITORY | Message FAILED  should be return AddDocumentToDatabaseException exception" duration="1"/>
+  </file>
+  <file path="/Users/miguel.fuentes/Documents/hunty-integration-microservice/src/infra/adapters/__spec__/slack-api.adapter.spec.ts">
+    <testCase name="ADAPTER | Slack Api RESOURCE | getMessage Should be defined" duration="1"/>
+    <testCase name="ADAPTER | Slack Api RESOURCE | getMessage Should be get slack message" duration="2"/>
+    <testCase name="ADAPTER | Slack Api RESOURCE | getMessage Should be fail and throw  GetMessageSlackException Exception" duration="1"/>
+    <testCase name="ADAPTER | Slack Api RESOURCE | getMessage Should be fail by ok value false and throw GetMessageSlackException Exception" duration="0"/>
+    <testCase name="ADAPTER | Slack Api RESOURCE | sendMessage Should be send slack messages" duration="1"/>
+    <testCase name="ADAPTER | Slack Api RESOURCE | sendMessage Should be fail and throw SendMessageSlackException Exception" duration="0"/>
+    <testCase name="ADAPTER | Slack Api RESOURCE | sendMessage Should be fail by ok value false and throw SendMessageSlackException Exception" duration="0"/>
+    <testCase name="ADAPTER | Slack Api RESOURCE | attachFilev Should be send slack messages" duration="2"/>
+    <testCase name="ADAPTER | Slack Api RESOURCE | attachFilev Should be fail and throw AttachFileSlackException Exception" duration="1"/>
+    <testCase name="ADAPTER | Slack Api RESOURCE | attachFilev Should be fail by ok value false and throw AttachFileSlackException Exception" duration="0"/>
+  </file>
+  <file path="/Users/miguel.fuentes/Documents/hunty-integration-microservice/src/infra/adapters/__spec__/logger-client.adapter.spec.ts">
+    <testCase name="ADAPTER | Logger Client Should log info" duration="19"/>
+    <testCase name="ADAPTER | Logger Client Should log warn" duration="1"/>
+    <testCase name="ADAPTER | Logger Client Should log error" duration="1"/>
+  </file>
+  <file path="/Users/miguel.fuentes/Documents/hunty-integration-microservice/src/infra/controllers/__spec__/integration.controller.spec.ts">
+    <testCase name="CONTROLLERS | Integration Should be return slack message history" duration="3"/>
+    <testCase name="CONTROLLERS | Integration Should be send slack messages by channel" duration="0"/>
+    <testCase name="CONTROLLERS | Integration Should be attach file to slack" duration="2"/>
+  </file>
+</testExecutions>

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",                        /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+    "declaration": true,                         /* Generates corresponding '.d.ts' file. */
+    "removeComments": true,                      /* Do not emit comments to output. */
+    "emitDecoratorMetadata": true,               /* Enables experimental support for emitting type metadata for decorators. */
+    "experimentalDecorators": true,              /* Enables experimental support for ES7 decorators. */
+    "allowSyntheticDefaultImports": true,        /* Allows write imports like import React from "react"; instead of import * as React from "react"; */
+    "target": "esnext",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 'ES2021', or 'ESNEXT'. */
+    "sourceMap": true,                           /* Generates corresponding '.map' file. */
+    "outDir": "./dist",                          /* Redirect output structure to the directory. */
+    "baseUrl": "./src",                          /* Lets set a base directory to resolve non-absolute module names. */
+    "incremental": true,                         /* Enable incremental compilation */
+    "skipLibCheck": true,                        /* Skip type checking of declaration files. */
+    "esModuleInterop": true,                     /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    "resolveJsonModule": true,
+    "paths": {
+      "@commons/*": ["commons/*"],
+      "@health/*": ["health/*"],
+      "@domain/*": ["domain/*"],
+      "@useCases/*": ["use-cases/*"],
+      "@infra/*": ["infra/*"],
+      "@application/*": ["application/*"]
+    }
+  }
+}

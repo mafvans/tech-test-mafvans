@@ -1,0 +1,42 @@
+# COMPILED OUTPUT
+/dist
+/node_modules
+
+# LOG
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# TEST
+/coverage
+/.nyc_output
+
+# IDE AND EDITOR
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# CONFIGURATION
+.npmrc
+
+# YALC
+.yalc
+yalc.lock
